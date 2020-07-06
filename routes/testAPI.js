@@ -23,7 +23,7 @@ router.get('/empty', function (req, res) {
   res.status(200).send('');
 });
 
-router.post('/empty', function (req, res) {
+router.post('empty', function (req, res) {
     res.set("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
     res.set("Cache-Control", "post-check=0, pre-check=0");
     res.set("Pragma", "no-cache");
